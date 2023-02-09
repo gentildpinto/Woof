@@ -13,14 +13,10 @@ and animations in Jetpack Compose.
     </tr>
     <tr>
         <td>
-            <video width="320" height="240" autoplay>
-                <source src="./screens/light_screen.webm" type="video/webm">
-            </video>
+            <img src="./screens/light_screen.gif" />
         </td>
         <td>
-            <video width="320" height="240" autoplay>
-                <source src="./screens/dark_screen.webm" type="video/webm">
-            </video>
+            <img src="./screens/dark_screen.gif" />
         </td>
     </tr>
 </table>
