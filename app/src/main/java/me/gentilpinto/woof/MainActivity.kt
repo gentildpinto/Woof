@@ -1,5 +1,6 @@
 package me.gentilpinto.woof
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -46,23 +47,19 @@ class MainActivity : ComponentActivity() {
 }
 
 @ExperimentalMaterial3Api
-@Preview(showBackground = true, showSystemUi = true, apiLevel = 23)
+@Preview(
+    name = "Light Theme", showBackground = true, showSystemUi = true, apiLevel = 23
+)
+@Preview(
+    name = "Dark Theme",
+    showBackground = true,
+    showSystemUi = true,
+    apiLevel = 23,
+    uiMode = Configuration.UI_MODE_NIGHT_YES
+)
 @Composable
-fun DefaultPreview() {
+fun AppPreview() {
     WoofTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
-        ) {
-            WoffApp()
-        }
-    }
-}
-
-@ExperimentalMaterial3Api
-@Preview(showBackground = true, showSystemUi = true, apiLevel = 23)
-@Composable
-fun DefaultPreviewDarkTheme() {
-    WoofTheme(isDarkTheme = true) {
         Surface(
             modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
         ) {
